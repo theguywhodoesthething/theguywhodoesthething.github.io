@@ -1,1 +1,30 @@
-<a href="www.google.com"><img src="http://bit.ly/RhrMEn" />
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SD Tech Blog</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	</head>
+	<body><div id="banner"><h1>theGUYwhodoestheTHING Tech Blog<h1></div>
+        <a href="index.html">
+       <img src="http://www.oregonhikers.org/w/images/thumb/0/02/HoodLoloNovember.jpg/500px-HoodLoloNovember.jpg"/>
+       </a>
+    <h4>When to cast a 'double' to an 'int'</h4>
+		<p>
+				When dealing with numbers in Java, it is important to use the correct data
+			type when declaring your variables. An 'int' is an integer, which is to say
+			that it can only contain whole numbers. A 'double' is a floating point value,
+			used when dealing with decimals. A common problem in programming occurs when
+			calculating a mix of 'doubles' and integers. For example, if you take <strong>3 / 2 = 1.5</strong>,
+			the 3 and 2 are both
+			integers, but 1.5 is a decimal. If 1.5 is stored into an 'int', then it will
+			be stored as 1, which is likely not what the programmer was looking for.
+			You can store it as a double, but when dealing with floating point values
+			computers often have rounding errors when repeating decimals are calculated.
+			So when calculating <strong>1.5 x 2 = 3</strong>, a program will often come up with
+			3.00000000001 instead of 3. So by 'casting' the double
+			3.00000000001 to an 'int' you can store the answer as 3 instead.
+			This Computerfile video on floating points has a more detailed explanation.
+		</p>
+		<div style="display:block; margin:auto"><iframe width="560" height="315" src="https://www.youtube.com/embed/PZRI1IfStY0" frameborder="0" allowfullscreen></iframe></div>
+	</body>
+</html>
